@@ -99,14 +99,14 @@ html{
 .banner
 {
     vertical-align: center;
-    position: relative;
 }
 .banner img{
+    position: relative;
     width: 100%;
 }
 .banner-text{
     position: absolute; 
-    top:320px;
+    top:520px;
     bottom: 0;
     right: 0;
     left:40px;
@@ -383,7 +383,7 @@ html{
 {
     padding-left: 8px;
     background-color: #fff;
-    height: 146px;
+    padding-bottom: 20px;
 }
 .country-item{
     margin-left: 10px;
@@ -411,8 +411,8 @@ html{
 }
 .img-item img
 {
-  width: 180px;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 .row2
 {
@@ -486,3 +486,52 @@ html{
 .w3 a{
     color: #fff;
 }
+
+/* Tablet */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375px)
+{
+ 
+}
+
+/* Mobile */
+@media only screen and (max-width: 46.1875em)
+{
+    .banner-name{
+        color: #fff;
+        margin: 0;
+        font-size: 3rem;
+        line-height: 60px;
+    }
+    .banner-blog{
+      display: none;
+     }
+    .banner-text{
+        top:260px;
+        left:20px;
+        font-size: 1.2rem;
+    }
+    .banner-btn
+    {
+        margin-top: 10px;
+    }
+    .header{
+        display: none;
+    }
+    .comment-content
+    {
+        display: block;
+    }
+    .comment-text{
+        margin-left: 0;
+    }
+    .comment-date
+    {
+        letter-spacing: -1.5px;
+    }
+    .row2
+    {
+        margin-top: 5px;
+    }
+
+}
+
