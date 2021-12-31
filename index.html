@@ -35,7 +35,7 @@
                 <div class="banner-text">
                     <h1 class="banner-name">Jane's</h1>
                     <p class="banner-blog">FASHION BLOG</p>
-                    <a href="" class="banner-btn">SUBCRIBE</a>
+                    <a class="banner-btn">SUBCRIBE</a>
                 </div>
         </div>
         <div class="container">
@@ -59,14 +59,15 @@
                                         <p class="content-text text2">Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
                                         <div class="btn-group">
                                             <div class="btn-like"><i class="fas fa-thumbs-up"></i><p>Like</p></div>
-                                            <button class="btn">
+                                            <label for="check1" class="btn">
                                                 <div class="btn-reply">
                                                     <p class="btn-reply-text">Replies</p>
                                                     <div class="rep-number">1</div>
                                                 </div>
-                                            </button>
+                                            </label>
                                         </div>
-                                        <div class="comment">
+                                        <input hidden type="checkbox" name="" id="check1">
+                                        <div id="comment1" class="comment">
                                             <hr class="line">
                                             <div class="comment-content">
                                                 <div class="comment-img"><img src="assets/images/avatar_smoke.jpg" alt=""></div>
@@ -91,14 +92,15 @@
                                             tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent 
                                             tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, 
                                             ultricies congue gravida diam non fringilla.</p>
-                                        <div class="btn-group">
+                                        <label for="check2" class="btn-group">
                                             <div class="btn-like"><i class="fas fa-thumbs-up"></i><p>Like</p></div>
                                             <div class="btn-reply">
                                                 <p class="btn-reply-text">Replies</p>
                                                 <div class="rep-number">2</div>
                                             </div>
-                                        </div>
-                                        <div class="comment">
+                                        </label>
+                                        <input hidden type="checkbox" name="" id="check2">
+                                        <div id="comment2" class="comment">
                                             <hr class="line">
                                             <div class="comment-content">
                                                 <div class="comment-img"><img src="assets/images/girl_train.jpg" alt=""></div>
@@ -132,14 +134,15 @@
                                             tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent 
                                             tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, 
                                             ultricies congue gravida diam non fringilla.</p>
-                                        <div class="btn-group">
+                                        <label for="check3" class="btn-group">
                                             <div class="btn-like"><i class="fas fa-thumbs-up"></i><p>Like</p></div>
                                             <div class="btn-reply">
                                                 <p class="btn-reply-text">Replies</p>
                                                 <div class="rep-number">3</div>
                                             </div>
-                                        </div>
-                                        <div class="comment">
+                                        </label>
+                                        <input hidden type="checkbox" name="" id="check3">
+                                        <div id="comment3" class="comment">
                                             <hr class="line">
                                             <div class="comment-content">
                                                 <div class="comment-img"><img src="assets/images/girl_mountain.jpg" alt=""></div>
@@ -287,10 +290,17 @@
                             <div class="tag-social">
                                 <div class="tag-email">Enter your e-mail below and get notified on the latest blog posts.</div>
                                 <input class="tag-input" type="text" placeholder="Enter e-mail">
-                                <input class="tag-submit" type="submit" value="Subcribe">
-
+                                <input id="" class="sub-btn tag-submit" type="submit" value="Subcribe">
                             </div>
-                        </div>
+                            <div class="sub-modal">
+                                <h1 class="modal-heading1">SUBSCRIBE</h1>
+                                <h3 class="modal-heading2">Join my mailing list to receive updates on the latest blog posts and other things.</h3>
+                                <input class="modal-input tag-input" type="email" name="" id="" placeholder="Enter e-mail">
+                                <input type="submit" class="tag-submit modal-input" value="Subcribe">
+                                    <div class="exit"><i class="fas fa-times"></i></div>
+                                </div>
+                            </div>
+                        <div for="check-modal" class="overlay"></div>
                     </div>
                 </div>
             </div>

@@ -1,16 +1,35 @@
-var cmt = document.querySelector('.comment');
-var btn = document.querySelector('.btn')
-console.log(btn)
-function showComment()
+const btn = document.querySelector('.sub-btn')
+const modal = document.querySelector('.sub-modal')
+const overlay = document.querySelector('.overlay')
+const exit = document.querySelector('.exit')
+const bannerBtn = document.querySelector('.banner-btn')
+
+function open()
 {
-    cmt.classList.add('comment-block')
+    modal.style.display='block';
+    overlay.style.display='block'
 }
-function hiddenComment()
+function close()
 {
-    cmt.classList.remove('comment-block')
+    modal.style.display='none';
+    overlay.style.display='none'
 }
-console.log(cmt.classList.contains('comment-block'))
-if(cmt.classList.contains('comment-block'))
+btn.addEventListener('click', ()=>
 {
-    btn.addEventListener('click', showComment)
-}
+    open();
+})
+
+bannerBtn.addEventListener('click', ()=>
+{
+    open()
+})
+
+exit.addEventListener('click', ()=>
+{
+    close();
+})
+
+overlay.addEventListener('click', ()=>
+{
+    close();
+})
